@@ -424,12 +424,7 @@ class MarkdownBuilder implements md.NodeVisitor {
                 ? CrossAxisAlignment.start
                 : CrossAxisAlignment.baseline,
             children: <Widget>[
-              SizedBox(
-                width: styleSheet.listIndent! +
-                    styleSheet.listBulletPadding!.left +
-                    styleSheet.listBulletPadding!.right,
-                child: bullet,
-              ),
+              bullet,
               Flexible(
                 fit: fitContent ? FlexFit.loose : FlexFit.tight,
                 child: child,
